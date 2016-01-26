@@ -26,7 +26,7 @@ def get_line_cache_name(dataset_config, n_images, row, nbands):
     if not path:
         return
 
-    filename = 'yatsm_r%i_n%i_b%i.npy.npz' % (row, n_images, nbands)
+    filename = 'yatsm_r%i_n%i_b%i.RData' % (row, n_images, nbands)
 
     return os.path.join(path, filename)
 
@@ -48,7 +48,7 @@ def get_line_cache_pattern(row, nbands, regex=False):
 
     """
     wildcard = '.*' if regex else '*'
-    pattern = 'yatsm_r{l}_n{w}_b{b}.npy.npz'.format(
+    pattern = 'yatsm_r{l}_n{w}_b{b}.RData'.format(
         l=row, w=wildcard, b=nbands)
 
     return pattern
@@ -140,9 +140,14 @@ def write_cache_file(cache_filename, Y, image_IDs):
             file. If not specified, function will not check for correspondence
 
     """
-    np.savez_compressed(cache_filename, **{
-        'Y': Y, _image_ID_str: image_IDs
-    })
+    # np.savez_compressed(cache_filename, **{
+    #     'Y': Y, _image_ID_str: image_IDs
+    # })
+    import rpy2.robjects.numpy2ri
+    rpy2.robjects.numpy2ri.activate()
+    from rpy2 import robjects
+    robjects.r.assign('Y', Y)
+    robjects.r("save(Y, file='{}', compress=TRUE)".format(cache_filename))
 
 
 # Cache file updating
