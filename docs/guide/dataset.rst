@@ -50,7 +50,7 @@ Dataset Preparation
     + Band 6 SR (SR * 10000)
     + Band 7 SR (SR * 10000)
     + Band 10 Thermal Brightness (C * 100)
-    	(Notice: TIRS data acquired from January 1, 2016 to March 31, 2016 will be reprocessed and made available in April, 2016, due to the detection of anomalous current levels associated with the scene select mirror (SSM) encoder electronics)
+    	Notice: TIRS data acquired from January 1, 2016 to March 31, 2016 will be reprocessed and made available in April 2016, due to the detection of anomalous current levels associated with the scene select mirror (SSM) encoder electronics.
     
     + Fmask/cFmask
         * 0 - clear land
