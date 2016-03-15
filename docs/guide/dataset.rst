@@ -7,13 +7,13 @@ Dataset Preparation
 - Harvard Forest, Massachusetts, USA (path13, row030)
     + [Footprint]
     + [Download](http://ftp-earth.bu.edu/public/ceholden/landsat_stacks/p013r030.tar.bz2) 167MB
-    + Stack pattern
+    + Stack pattern: 'L*stack'
     + File format
     + Size
 - Amazon basin, Brazil (path 255, row 066)
     + [Footprint]
     + [Download]
-    + Stack pattern
+    + Stack patternL: 'L*stack'
     + File format: GeoTIFF
     + Size
 - Denver, Colorado, USA (path 034, row 033)
@@ -67,6 +67,7 @@ Notice: Your dataset should be in either GeoTIFF or ENVI band-interleave by pixe
 ## Dataset directory structure for a Landsat scene
 
 - Directory structure example (p225r066)
+
 
 ## Link Configuration? (https://github.com/ceholden/yatsm/blob/master/docs/guide/configuration.rst)
 
