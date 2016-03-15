@@ -74,6 +74,10 @@ Notice: Your dataset should be in either GeoTIFF or ENVI band-interleave by pixe
             - LC82250662013110LGN01_stack.hdr
             - LC82250662013110LGN01_MTL.txt
         * LC82250662013142LGN01
+            - LC82250662013142LGN01_stack
+            - LC82250662013142LGN01_stack.aux.xml
+            - LC82250662013142LGN01_stack.hdr
+            - LC82250662013142LGN01_MTL.txt
 
 
 ## Link Configuration? (https://github.com/ceholden/yatsm/blob/master/docs/guide/configuration.rst)
