@@ -50,7 +50,7 @@ Dataset Preparation
     + Band 6 SR (SR * 10000)
     + Band 7 SR (SR * 10000)
     + Band 10 Thermal Brightness (C * 100)
-    	Notice: TIRS data acquired from January 1, 2016 to March 31, 2016 will be reprocessed and made available in April 2016, due to the detection of anomalous current levels associated with the scene select mirror (SSM) encoder electronics.
+    	Notice: TIRS data acquired from January 1, 2016 to March 31, 2016 will be reprocessed and made available in April          2016, due to the detection of anomalous current levels associated with the scene select mirror (SSM) encoder               electronics.
     
     + Fmask/cFmask
         * 0 - clear land
@@ -63,10 +63,17 @@ Dataset Preparation
 Notice: Your dataset should be in either GeoTIFF or ENVI band-interleave by pixel (BIP) format.
 
 
-
-## Dataset directory structure for a Landsat scene
+## Directory structure
 
 - Directory structure example (p225r066)
+    + images
+        * cache
+        * LC82250662013110LGN01
+            - LC82250662013110LGN01_stack
+            - LC82250662013110LGN01_stack.aux.xml
+            - LC82250662013110LGN01_stack.hdr
+            - LC82250662013110LGN01_MTL.txt
+        * LC82250662013142LGN01
 
 
 ## Link Configuration? (https://github.com/ceholden/yatsm/blob/master/docs/guide/configuration.rst)
